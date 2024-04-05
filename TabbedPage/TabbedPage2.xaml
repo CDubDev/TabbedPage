@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TabbedPage"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="TabbedPage.TabbedPage2">
+
+    <!--<local:SettingsPage Title="Tab1" IconImageSource="{StaticResource TabThree}" />-->
+    <NavigationPage Title="Dashboard" IconImageSource="{StaticResource TabHome}">
+        <x:Arguments>
+            <local:MainPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Payments" IconImageSource="{StaticResource TabPayments}">
+        <x:Arguments>
+            <local:PaymentPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Calendar" IconImageSource="{StaticResource TabCalendar}">
+        <x:Arguments>
+            <local:CalendarPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Documents" IconImageSource="{StaticResource TabDocuments}">
+        <x:Arguments>
+            <local:DocumentsPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Violations" IconImageSource="{StaticResource TabViolations}">
+        <x:Arguments>
+            <local:ViolationsPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Work Orders" IconImageSource="{StaticResource TabWorkOrders}">
+        <x:Arguments>
+            <local:WorkOrders />
+        </x:Arguments>
+    </NavigationPage>
+   
+
+
+
+
+</TabbedPage>
